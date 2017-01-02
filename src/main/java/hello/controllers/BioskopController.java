@@ -70,4 +70,9 @@ public class BioskopController {
         setAllDataBioskop();
         setActiveKotaBioskop();
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/test")
+    public String testOutput() {
+        return "Hai Bima";
+    }
 }
