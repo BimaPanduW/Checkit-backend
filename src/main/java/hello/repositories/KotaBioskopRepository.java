@@ -9,5 +9,5 @@ import java.util.List;
  * Created by bimapw on 12/20/16.
  */
 public interface KotaBioskopRepository extends CrudRepository<KotaBioskop, String> {
-
+    List<KotaBioskop> findByActivatedTrue();
 }

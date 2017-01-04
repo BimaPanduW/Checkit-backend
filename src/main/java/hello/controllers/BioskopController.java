@@ -26,7 +26,7 @@ public class BioskopController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/kota")
     public List<KotaBioskop> getKota() {
-        return (List<KotaBioskop>) kotaBioskopRepository.findAll();
+        return kotaBioskopRepository.findByActivatedTrue();
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/bioskop/{idKota}")
